@@ -4,13 +4,18 @@
   <title>Todo App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Todo List</h1>
+  <div class="container">
+    <h1>✨ My Tasks</h1>
 
-  <input type="text" id="taskInput" placeholder="New task" />
-  <button id="addBtn">Add Task</button>
+    <div class="input-box">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button id="addBtn">Add</button>
+    </div>
 
-  <ul id="taskList"></ul>
+    <ul id="taskList"></ul>
+  </div>
 
   <script src="script.js"></script>
 </body>
