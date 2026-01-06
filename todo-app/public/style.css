@@ -1,17 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  font-family: "Poppins", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.15);
+}
+
+h1 {
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 input {
-  padding: 8px;
-  margin-right: 6px;
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 
 button {
-  padding: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 li {
+  padding: 12px;
   margin-top: 10px;
+  background: #f5f5ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex: 1;
+}
+
+.actions button {
+  margin-left: 8px;
+  border-radius: 6px;
+}
+
+.actions .edit {
+  background: #34d399;
+}
+
+.actions .delete {
+  background: #ef4444;
 }
